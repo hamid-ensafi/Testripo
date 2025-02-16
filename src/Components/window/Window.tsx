@@ -37,7 +37,7 @@ function Content({ id, children, direction }: IContent): React.JSX.Element {
     <div
       className={
         "absolute  w-full h-full top-[0%]   z-10 " +
-        (isOpen && id === openId ? "   block bg-shadow-100 w-full" : "hidden ")
+        (isOpen && id === openId ? "  visible bg-shadow-100 w-full" : "invisible ")
       }
       onClick={() => dispatch(closeWindow())}
       onKeyDown={() => null}
@@ -48,14 +48,22 @@ function Content({ id, children, direction }: IContent): React.JSX.Element {
         className={
           "absolute w-full h-full  transition-all duration-300   cursor-default  " +
           (isOpen && id === openId
-            ? `${direction === "left" ? " left-0 " : " right-0  "}`
-            : `${direction === "left" ? " left-[100%] " : "  right-[100%] "}`)
+            ? `${
+                direction === "left"
+                  ? " left-0 "
+                  : " right-0  "
+              }`
+            : `${
+                direction === "left"
+                  ? " left-[100%] "
+                  : "  right-[100%] "
+              }`)
         }
       >
         {children}
       </div>
     </div>,
-    document.body
+   document.body
   );
 }
 
