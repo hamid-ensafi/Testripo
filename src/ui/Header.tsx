@@ -5,11 +5,10 @@ import {
 
 import Button from "./Button";
 
-// import UserName from "@/feature/GetUserName/UserName";
 import SideBarMobile from "./SideBarMobile";
 import Avatar from "./Avatar";
-// import Window from "@/Components/window/Window";
-// import MessageBox from "./MessageBox";
+import Window from "@/Components/window/Window";
+import MessageBox from "./MessageBox";
 import { useDispatch } from "react-redux";
 import { openWindow } from "@/Components/window/slice";
 function Header(): React.JSX.Element {
@@ -29,14 +28,14 @@ function Header(): React.JSX.Element {
               <Button type="iconmob">
                 <SearchSearchNormalOutline size={24} />
               </Button>
-              {/* <Window>
+              <Window>
                 <Window.Selection id="2" type="iconmob">
                   <NotificationsNotificationBingOutline size={24} />
                 </Window.Selection>
                 <Window.Content id="2" direction="right">
                   <MessageBox />
                 </Window.Content>
-              </Window> */}
+              </Window>
             </div>
             <div className="hidden md:w-1/2 lg:w-1/3 md:flex md:items-center  relative border border-grayprime-300 rounded-xl">
               <div className="text-primery-default px-2.5">

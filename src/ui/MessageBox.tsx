@@ -9,7 +9,7 @@ function MessageBox(): React.JSX.Element {
   const dispath = useDispatch();
 
   return (
-    <div className="flex justify-end h-full  ">
+    
       <div onClick={(e:React.MouseEvent<HTMLDivElement>)=>e.stopPropagation()} className="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 bg-slate-50  flex flex-col gap-5">
         <div className="flex  justify-center  bg-tint-200 rounded-[0px_0px_50%_50%] p-12">
           <h4 className="font-irandemibold text-xl text-center w-11/12">
@@ -21,7 +21,6 @@ function MessageBox(): React.JSX.Element {
         </div>
         <MessageBoxContent />
       </div>
-    </div>
   );
 }
 
