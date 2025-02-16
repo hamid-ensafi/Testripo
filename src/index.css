@@ -31,12 +31,14 @@
 
     font-weight: 500;
   }
-  body,html{
-    overflow:hidden !important ;
+  body,
+  html {
+    overflow: hidden !important ;
   }
   body {
     @apply font-iranregular;
     @apply overflow-x-hidden;
+    position: relative;
   }
   input {
     @apply bg-none;
