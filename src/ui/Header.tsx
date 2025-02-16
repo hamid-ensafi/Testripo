@@ -8,7 +8,7 @@ import Button from "./Button";
 import SideBarMobile from "./SideBarMobile";
 import Avatar from "./Avatar";
 import Window from "@/Components/window/Window";
-import MessageBox from "./MessageBox";
+// import MessageBox from "./MessageBox";
 import { useDispatch } from "react-redux";
 import { openWindow } from "@/Components/window/slice";
 function Header(): React.JSX.Element {
@@ -33,7 +33,32 @@ function Header(): React.JSX.Element {
                   <NotificationsNotificationBingOutline size={24} />
                 </Window.Selection>
                 <Window.Content id="2" direction="right">
-                  <MessageBox />
+                  {/* <MessageBox /> */}
+                  <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta excepturi commodi ab pariatur placeat aperiam exercitationem? Exercitationem, quas dolorem eius vel voluptatem fugit, unde assumenda consequuntur vero deleniti eveniet.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta excepturi commodi ab pariatur placeat aperiam exercitationem? Exercitationem, quas dolorem eius vel voluptatem fugit, unde assumenda consequuntur vero deleniti eveniet.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta excepturi commodi ab pariatur placeat aperiam exercitationem? Exercitationem, quas dolorem eius vel voluptatem fugit, unde assumenda consequuntur vero deleniti eveniet.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta excepturi commodi ab pariatur placeat aperiam exercitationem? Exercitationem, quas dolorem eius vel voluptatem fugit, unde assumenda consequuntur vero deleniti eveniet.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta excepturi commodi ab pariatur placeat aperiam exercitationem? Exercitationem, quas dolorem eius vel voluptatem fugit, unde assumenda consequuntur vero deleniti eveniet.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta excepturi commodi ab pariatur placeat aperiam exercitationem? Exercitationem, quas dolorem eius vel voluptatem fugit, unde assumenda consequuntur vero deleniti eveniet.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta excepturi commodi ab pariatur placeat aperiam exercitationem? Exercitationem, quas dolorem eius vel voluptatem fugit, unde assumenda consequuntur vero deleniti eveniet.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta excepturi commodi ab pariatur placeat aperiam exercitationem? Exercitationem, quas dolorem eius vel voluptatem fugit, unde assumenda consequuntur vero deleniti eveniet.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta excepturi commodi ab pariatur placeat aperiam exercitationem? Exercitationem, quas dolorem eius vel voluptatem fugit, unde assumenda consequuntur vero deleniti eveniet.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta excepturi commodi ab pariatur placeat aperiam exercitationem? Exercitationem, quas dolorem eius vel voluptatem fugit, unde assumenda consequuntur vero deleniti eveniet.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta excepturi commodi ab pariatur placeat aperiam exercitationem? Exercitationem, quas dolorem eius vel voluptatem fugit, unde assumenda consequuntur vero deleniti eveniet.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta excepturi commodi ab pariatur placeat aperiam exercitationem? Exercitationem, quas dolorem eius vel voluptatem fugit, unde assumenda consequuntur vero deleniti eveniet.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta excepturi commodi ab pariatur placeat aperiam exercitationem? Exercitationem, quas dolorem eius vel voluptatem fugit, unde assumenda consequuntur vero deleniti eveniet.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta excepturi commodi ab pariatur placeat aperiam exercitationem? Exercitationem, quas dolorem eius vel voluptatem fugit, unde assumenda consequuntur vero deleniti eveniet.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta excepturi commodi ab pariatur placeat aperiam exercitationem? Exercitationem, quas dolorem eius vel voluptatem fugit, unde assumenda consequuntur vero deleniti eveniet.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta excepturi commodi ab pariatur placeat aperiam exercitationem? Exercitationem, quas dolorem eius vel voluptatem fugit, unde assumenda consequuntur vero deleniti eveniet.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta excepturi commodi ab pariatur placeat aperiam exercitationem? Exercitationem, quas dolorem eius vel voluptatem fugit, unde assumenda consequuntur vero deleniti eveniet.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta excepturi commodi ab pariatur placeat aperiam exercitationem? Exercitationem, quas dolorem eius vel voluptatem fugit, unde assumenda consequuntur vero deleniti eveniet.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta excepturi commodi ab pariatur placeat aperiam exercitationem? Exercitationem, quas dolorem eius vel voluptatem fugit, unde assumenda consequuntur vero deleniti eveniet.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta excepturi commodi ab pariatur placeat aperiam exercitationem? Exercitationem, quas dolorem eius vel voluptatem fugit, unde assumenda consequuntur vero deleniti eveniet.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta excepturi commodi ab pariatur placeat aperiam exercitationem? Exercitationem, quas dolorem eius vel voluptatem fugit, unde assumenda consequuntur vero deleniti eveniet.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta excepturi commodi ab pariatur placeat aperiam exercitationem? Exercitationem, quas dolorem eius vel voluptatem fugit, unde assumenda consequuntur vero deleniti eveniet.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo soluta excepturi commodi ab pariatur placeat aperiam exercitationem? Exercitationem, quas dolorem eius vel voluptatem fugit, unde assumenda consequuntur vero deleniti eveniet.
+                  </div>
                 </Window.Content>
               </Window>
             </div>
