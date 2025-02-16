@@ -51,7 +51,7 @@ function Content({ id, children, direction }: IContent): React.JSX.Element {
       <div
         className={
           "absolute w-full h-full  transition-all duration-300    cursor-default  " +
-          (isOpen && id === openId ? " left-[0%]" : 'left-[-100%]')
+          (isOpen && id === openId ? " right-[0%]" : 'right-[100%]')
         }
       >
         {children}
