@@ -1,0 +1,15 @@
+services:
+  ticketing-front:
+    image: ticketing-front
+    container_name: ticketing-front
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+
+    ports:
+      - "3002:3000"
+    networks:
+      - ticketdb_django
+networks:
+  ticketdb_django:
+    external: true

@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: iranbold;
+  src: url("@/assets/font/IRANSansX-Bold.woff") format("opentype");
+  src: url("@/assets/font/IRANSansX-Bold.woff2") format("opentype");
+}
+@font-face {
+  font-family: irandemibold;
+  src: url("@/assets/font/IRANSansX-DemiBold.woff") format("opentype");
+  src: url("@/assets/font/IRANSansX-DemiBold.woff2") format("opentype");
+}
+@font-face {
+  font-family: iranmedium;
+  src: url("@/assets/font/IRANSansX-Medium.woff") format("opentype");
+  src: url("@/assets/font/IRANSansX-Medium.woff2") format("opentype");
+}
+@font-face {
+  font-family: iranregular;
+  src: url("@/assets/font/IRANSansX-Regular.woff") format("opentype");
+  src: url("@/assets/font/IRANSansX-Regular.woff2") format("opentype");
+}
+
+@layer base {
+  .ss01 {
+    -moz-font-feature-settings: "ss01";
+    -webkit-font-feature-settings: "ss01";
+    font-feature-settings: "ss01";
+
+    font-weight: 500;
+  }
+  body,html{
+    overflow-x:hidden !important ;
+  }
+  body {
+    @apply font-iranregular;
+    @apply overflow-x-hidden;
+  }
+  input {
+    @apply bg-none;
+    @apply outline-none;
+    background: none;
+  }
+}
+@layer utilities {
+  .scrollbar-none::-webkit-scrollbar {
+    @apply w-2;
+  }
+  .scrollbar::-webkit-scrollbar {
+    @apply h-2;
+    @apply w-2;
+  }
+  .scrollbar::-webkit-scrollbar-track {
+    @apply rounded-[100vh];
+    @apply bg-transparent;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-grayprime-500;
+    @apply rounded-[100vh];
+  }
+
+  .scrollbar:-webkit-scrollbar-thumb:hover {
+    @apply bg-grayprime-500;
+  }
+}
