@@ -32,7 +32,7 @@ function Header(): React.JSX.Element {
                 <Window.Selection id="2" type="iconmob">
                   <NotificationsNotificationBingOutline size={24} />
                 </Window.Selection>
-                <Window.Content id="2" direction="left">
+                <Window.Content id="2" direction="right">
                   <MessageBox />
                 </Window.Content>
               </Window>
