@@ -50,12 +50,12 @@ function Content({ id, children, direction }: IContent): React.JSX.Element {
           (isOpen && id === openId
             ? `${
                 direction === "left"
-                  ? " left-0 "
+                  ? " right-0 "
                   : " right-0  "
               }`
             : `${
                 direction === "left"
-                  ? " left-[100%] "
+                  ? " right-[100%] "
                   : "  right-[100%] "
               }`)
         }
