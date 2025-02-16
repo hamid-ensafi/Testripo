@@ -32,14 +32,16 @@ function Selection({ id, children, type }: ISelection): React.JSX.Element {
 
 function Content({ id, children, direction }: IContent): React.JSX.Element {
   const { isOpen, openId } = useSelector(getOpenWindow);
-  console.log(direction)
+  console.log(direction);
 
   const dispatch = useDispatch();
   return createPortal(
     <div
       className={
-        "absolute  w-full h-full top-[0%] right-0   z-10 " +
-        (isOpen && id === openId ? "  visible bg-shadow-100 w-full" : "invisible ")
+        "absolute  w-full h-full top-[0%]   z-10 " +
+        (isOpen && id === openId
+          ? "  visible bg-shadow-100 w-full"
+          : "invisible ")
       }
       onClick={() => dispatch(closeWindow())}
       onKeyDown={() => null}
@@ -48,14 +50,14 @@ function Content({ id, children, direction }: IContent): React.JSX.Element {
     >
       <div
         className={
-          "absolute w-full h-full  transition-all duration-300 right-[100%]   cursor-default  " +
-          (isOpen && id === openId ? 'right-[0%]':null)
+          "absolute w-full h-full  transition-all duration-300    cursor-default  " +
+          (isOpen && id === openId ? " left-[0%]" : 'left-[-100%]')
         }
       >
         {children}
       </div>
     </div>,
-   document.body
+    document.body
   );
 }
 
