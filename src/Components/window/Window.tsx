@@ -38,7 +38,7 @@ function Content({ id, children, direction }: IContent): React.JSX.Element {
   return createPortal(
     <div
       className={
-        "absolute  w-full h-full top-[0%]   z-10 " +
+        "absolute  w-full h-full top-[0%] left-0   z-10 " +
         (isOpen && id === openId
           ? "  visible bg-shadow-100 w-full"
           : "invisible ")
