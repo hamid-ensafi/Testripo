@@ -39,7 +39,7 @@ function Content({ id, children, direction }: IContent): React.JSX.Element {
     <div
       className={
         "absolute  w-full h-full top-[0%]   z-10 " +
-        (isOpen && id === openId ? "  visible bg-shadow-100 w-full" : "invisible ")
+        (isOpen && id === openId ? "  visible bg-shadow-100 w-full" : "visible ")
       }
       onClick={() => dispatch(closeWindow())}
       onKeyDown={() => null}
