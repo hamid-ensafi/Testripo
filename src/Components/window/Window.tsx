@@ -36,8 +36,8 @@ function Content({ id, children, direction }: IContent): React.JSX.Element {
   return createPortal(
     <div
       className={
-        "absolute  w-full h-full top-0 right-0 transition-all   z-10 " +
-        (isOpen && id === openId ? "  hidden bg-shadow-100" : "block  ")
+        "absolute  w-full h-full top-[0%]   z-10 " +
+        (isOpen && id === openId ? "   block bg-shadow-100 w-full" : "hidden ")
       }
       onClick={() => dispatch(closeWindow())}
       onKeyDown={() => null}
@@ -46,18 +46,10 @@ function Content({ id, children, direction }: IContent): React.JSX.Element {
     >
       <div
         className={
-          "transform w-full h-full relative transition-all duration-300   cursor-default  " +
+          "absolute w-full h-full  transition-all duration-300   cursor-default  " +
           (isOpen && id === openId
-            ? `${
-                direction === "left"
-                  ? " translate-x-[0%] "
-                  : " translate-x-[0%] "
-              }`
-            : `${
-                direction === "left"
-                  ? " translate-x-[100%] "
-                  : " translate-x-[-100%] "
-              }`)
+            ? `${direction === "left" ? " left-0 " : " right-0  "}`
+            : `${direction === "left" ? " left-[100%] " : "  right-[100%] "}`)
         }
       >
         {children}
